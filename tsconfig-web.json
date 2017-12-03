@@ -1,0 +1,43 @@
+﻿{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "es5",
+    "module": "system",
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "importHelpers": true,
+    "outDir": "build-web",
+
+    "baseUrl": ".",
+    "paths": {
+      "reactx-mui/current/*": [ "src/reactx-mui/web/*" ],
+      "reactx-mui/native/*": [ "src/reactx-mui/native/*" ],
+      "reactx-mui/web/*": [ "src/reactx-mui/web/*" ],
+      "reactx-mui/common/*": [ "src/reactx-mui/common/*" ],
+      "test/*": [ "src/test/*" ]
+    },
+
+    //"importHelpers": true, https://github.com/facebook/react-native/issues/16858
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": false,
+    "downlevelIteration": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "noImplicitReturns": true,
+    "strictFunctionTypes": false,
+
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "jsx": "react",
+    "lib": [
+      "dom",
+      "es2015",
+      "esnext.asynciterable"
+    ]
+  },
+  "include": [ "**/*" ],
+  "exclude": [
+    "jspm_packages",
+    "node_modules"
+  ]
+}

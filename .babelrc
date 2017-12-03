@@ -1,0 +1,22 @@
+{
+  "presets": [ "babel-preset-expo" ],
+  "ignore": [
+    "jspm_packages/**/*"
+  ],
+  "env": {
+    "development": {
+      "plugins": [ "transform-react-jsx-source" ]
+    }
+  },
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": [ "./build-native/src" ],
+        "alias": {
+          "reactx-mui/current": "reactx-mui/native"
+        }
+      }
+    ]
+  ]
+}
