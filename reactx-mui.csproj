@@ -25,7 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <TypeScriptToolsVersion>2.6</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -71,6 +71,7 @@
     <Content Include="package.json" />
     <Content Include=".babelrc" />
     <Content Include="app.json" />
+    <Content Include="build.cmd" />
     <None Include="packages.config" />
     <Content Include="README.md" />
     <Content Include="tsconfig-native.json" />
@@ -97,10 +98,13 @@
     <TypeScriptCompile Include="App.tsx" />
     <TypeScriptCompile Include="index.tsx" />
     <TypeScriptCompile Include="src\reactx-mui\common\deepmerge.d.ts" />
+    <TypeScriptCompile Include="src\reactx-mui\common\hallo.ts" />
     <TypeScriptCompile Include="src\reactx-mui\common\react-native-d.d.ts" />
     <TypeScriptCompile Include="src\reactx-mui\common\warning.d.ts" />
-    <TypeScriptCompile Include="src\reactx-mui\native\index.tsx" />
-    <TypeScriptCompile Include="src\reactx-mui\web\index.tsx" />
+    <TypeScriptCompile Include="src\reactx-mui\native\index.ts" />
+    <TypeScriptCompile Include="src\reactx-mui\native\app.tsx" />
+    <TypeScriptCompile Include="src\reactx-mui\web\app.tsx" />
+    <TypeScriptCompile Include="src\reactx-mui\web\index.ts" />
     <TypeScriptCompile Include="src\test\index.tsx" />
   </ItemGroup>
   <ItemGroup>
@@ -119,7 +123,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>60266</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
@@ -140,6 +144,9 @@
     <Error Condition="!Exists('..\..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
     <Error Condition="!Exists('..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
+  <PropertyGroup>
+    <PostBuildEvent>call d:\rw\pavelpz\reactx-mui\build.cmd</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

@@ -1,7 +1,7 @@
 {
   "presets": [ "babel-preset-expo" ],
   "ignore": [
-    "jspm_packages/**/*"
+    "./jspm_packages/**/*"
   ],
   "env": {
     "development": {

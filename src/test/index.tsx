@@ -1,5 +1,5 @@
 import React from 'react'
-import app from 'reactx-mui/current/index'
+import app from 'reactx-mui/current/app'
 
 export default app
 

@@ -16,6 +16,7 @@
       "reactx-mui/common/*": [ "src/reactx-mui/common/*" ],
       "test/*": [ "src/test/*" ]
     },
+    "rootDir": ".",
 
     //"importHelpers": true, https://github.com/facebook/react-native/issues/16858
     "allowSyntheticDefaultImports": true,
@@ -38,6 +39,8 @@
   "include": [ "**/*" ],
   "exclude": [
     "jspm_packages",
-    "node_modules"
+    "node_modules",
+    "build-native",
+    "build-web"
   ]
 }
