@@ -1,0 +1,24 @@
+{
+  "name": "reactx-mui",
+  "version": "0.1.0",
+  "description": "material-ui for react-native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PavelPZ/reactx-mui.git"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "material-ui"
+  ],
+  "author": "pzika@langmaster.cz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PavelPZ/reactx-mui/issues"
+  },
+  "homepage": "https://github.com/PavelPZ/reactx-mui#readme"
+}
