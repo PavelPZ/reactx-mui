@@ -1,6 +1,6 @@
 {
   "name": "reactx-mui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "material-ui for react-native",
   "private": true,
   "main": "lib-native/test/App.js",
