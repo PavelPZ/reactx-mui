@@ -25,13 +25,15 @@
   "devDependencies": {
     "@types/react": "^16.0.25",
     "@types/react-dom": "^16.0.3",
-    "@types/react-native": "^0.50.7"
+    "@types/react-native": "^0.50.7",
+    "material-ui": "^1.0.0-beta.22"
   },
   "dependencies": {
     "deepmerge": "^2.0.1",
     "expo": "^23.0.5",
     "react": "16.0.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-23.0.0.tar.gz",
+    "recompose": "^0.26.0",
     "tslib": "^1.8.0",
     "warning": "^3.0.0"
   },
@@ -41,7 +43,8 @@
     "dependencies": {
       "core-js": "npm:core-js@^2.5.1",
       "deepmerge": "npm:deepmerge@^2.0.1",
-      "react-dom": "npm:react-dom@^16.2.0",
+      "material-ui": "npm:material-ui@next",
+      "recompose": "npm:recompose@^0.26.0",
       "tslib": "npm:tslib@^1.8.0",
       "warning": "npm:warning@^3.0.0"
     },
@@ -57,10 +60,13 @@
       "fs": "npm:jspm-nodelibs-fs@^0.2.0",
       "http": "npm:jspm-nodelibs-http@^0.2.0",
       "https": "npm:jspm-nodelibs-https@^0.2.0",
+      "jss": "npm:jss@^9.0.0",
+      "lodash": "npm:lodash@^4.17.0",
       "os": "npm:jspm-nodelibs-os@^0.2.0",
       "path": "npm:jspm-nodelibs-path@^0.2.0",
       "process": "npm:jspm-nodelibs-process@^0.2.0",
       "react": "npm:react@^16.0.0",
+      "react-dom": "npm:react-dom@^16.2.0",
       "stream": "npm:jspm-nodelibs-stream@^0.2.0",
       "string_decoder": "npm:jspm-nodelibs-string_decoder@^0.2.0",
       "url": "npm:jspm-nodelibs-url@^0.2.0",
@@ -82,6 +88,12 @@
         "ignore": [
           "test.js"
         ]
+      },
+      "npm:lodash@4.17.4": {
+        "map": {
+          "buffer": "@empty",
+          "process": "@empty"
+        }
       },
       "npm:pbkdf2@3.0.14": {
         "main": "browser.js"

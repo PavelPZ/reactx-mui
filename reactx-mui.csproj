@@ -73,12 +73,33 @@
     <Content Include=".babelrc" />
     <Content Include="app.json" />
     <Content Include="build.cmd" />
-    <Content Include="lib-web\package.json" />
+    <Content Include="publish.cmd" />
     <None Include="packages.config" />
     <Content Include="README.md" />
+    <Content Include="src\native\links.html" />
     <Content Include="tsconfig-native.json" />
     <Content Include="tsconfig-web.json" />
     <Content Include="tsconfig.json" />
+    <Content Include="src\native\fonts\Roboto-Light.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="src\native\fonts\Roboto-Medium.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="src\native\fonts\Roboto-Regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="src\native\styles\styler.ts_" />
+    <Content Include="src\native\theme.json" />
+    <Content Include="src\web\fonts\Roboto-Light.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="src\web\fonts\Roboto-Medium.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="src\web\fonts\Roboto-Regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -97,23 +118,63 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="src\test\App.tsx" />
-    <TypeScriptCompile Include="src\test\index.tsx" />
-    <TypeScriptCompile Include="src\common\deepmerge.d.ts" />
-    <TypeScriptCompile Include="src\common\hallo.ts" />
-    <TypeScriptCompile Include="src\common\react-native-d.d.ts" />
-    <TypeScriptCompile Include="src\common\warning.d.ts" />
-    <TypeScriptCompile Include="src\native\index.ts" />
-    <TypeScriptCompile Include="src\native\app.tsx" />
-    <TypeScriptCompile Include="src\web\app.tsx" />
-    <TypeScriptCompile Include="src\web\index.ts" />
-    <TypeScriptCompile Include="src\test\test-app.tsx" />
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="src\reactx-mui\" />
+    <TypeScriptCompile Include="src\common\ButtonBase\ButtonBase-d.d.ts" />
+    <TypeScriptCompile Include="src\common\Button\Button-d.d.ts" />
+    <TypeScriptCompile Include="src\common\Icon\Icon-d.d.ts" />
+    <TypeScriptCompile Include="src\common\Icon\Icon.tsx" />
+    <TypeScriptCompile Include="src\common\ScrollView\ScrollView-d.d.ts" />
+    <TypeScriptCompile Include="src\common\ScrollView\ScrollView.tsx" />
+    <TypeScriptCompile Include="src\common\styles\createMuiTheme.ts" />
+    <TypeScriptCompile Include="src\common\styles\createTypography-d.d.ts" />
+    <TypeScriptCompile Include="src\common\styles\empties.ts" />
+    <TypeScriptCompile Include="src\common\styles\reactCSS.d.ts" />
+    <TypeScriptCompile Include="src\common\styles\toPlatform.ts" />
+    <TypeScriptCompile Include="src\common\styles\withStyles-d.d.ts" />
+    <TypeScriptCompile Include="src\common\styles\withStyles.tsx" />
+    <TypeScriptCompile Include="src\common\Template\Template-d.d.ts" />
+    <TypeScriptCompile Include="src\common\Template\Template.tsx" />
+    <TypeScriptCompile Include="src\common\Text\Text-d.d.ts" />
+    <TypeScriptCompile Include="src\common\Text\Text.tsx" />
+    <TypeScriptCompile Include="src\common\Typography\Typography-d.d.ts" />
+    <TypeScriptCompile Include="src\common\View\View-d.d.ts" />
+    <TypeScriptCompile Include="src\common\View\View.tsx" />
+    <TypeScriptCompile Include="src\native\ButtonBase\ButtonBase.tsx" />
+    <TypeScriptCompile Include="src\native\Button\Button.tsx" />
+    <TypeScriptCompile Include="src\native\Icon\Icon.tsx" />
+    <TypeScriptCompile Include="src\native\index.ts" />
+    <TypeScriptCompile Include="src\native\ScrollView\ScrollView.tsx" />
+    <TypeScriptCompile Include="src\native\styles\createMuiTheme.ts" />
+    <TypeScriptCompile Include="src\native\styles\createTypography.ts" />
+    <TypeScriptCompile Include="src\native\styles\expoLoadFonts.ts" />
+    <TypeScriptCompile Include="src\native\styles\MuiThemeProvider.ts" />
+    <TypeScriptCompile Include="src\native\styles\shadows.ts" />
+    <TypeScriptCompile Include="src\native\styles\withStyles.tsx" />
+    <TypeScriptCompile Include="src\native\Template\Template.tsx" />
+    <TypeScriptCompile Include="src\native\Text\Text.tsx" />
+    <TypeScriptCompile Include="src\native\Typography\Typography.tsx" />
+    <TypeScriptCompile Include="src\native\View\View.tsx" />
+    <TypeScriptCompile Include="src\typings\mdi-react-n.d.ts" />
+    <TypeScriptCompile Include="src\web\ButtonBase\ButtonBase.tsx" />
+    <TypeScriptCompile Include="src\web\Button\Button.tsx" />
+    <TypeScriptCompile Include="src\web\Icon\Icon.tsx" />
+    <TypeScriptCompile Include="src\web\index.ts" />
+    <TypeScriptCompile Include="src\web\ScrollView\ScrollView.tsx" />
+    <TypeScriptCompile Include="src\web\styles\createMuiTheme.ts" />
+    <TypeScriptCompile Include="src\web\styles\MuiThemeProvider.ts" />
+    <TypeScriptCompile Include="src\web\styles\inline-styles.tsx" />
+    <TypeScriptCompile Include="src\web\styles\withStyles.tsx" />
+    <TypeScriptCompile Include="src\web\Template\Template.tsx" />
+    <TypeScriptCompile Include="src\web\Text\Text.tsx" />
+    <TypeScriptCompile Include="src\web\Typography\Typography.tsx" />
+    <TypeScriptCompile Include="src\web\View\View.tsx" />
+    <TypeScriptCompile Include="src\typings\expo.d.ts" />
+    <TypeScriptCompile Include="src\typings\mui-d.d.ts" />
+    <TypeScriptCompile Include="src\typings\react-native.d.ts" />
+    <TypeScriptCompile Include="src\typings\typings.d.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -149,7 +210,7 @@
     <Error Condition="!Exists('..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
   <PropertyGroup>
-    <PostBuildEvent>call d:\rw\pavelpz\reactx-mui\build.cmd</PostBuildEvent>
+    <PostBuildEvent>call "c:\Program Files (x86)\Microsoft SDKs\TypeScript\2.6\tsc.exe" --p D:\rw\pavelpz\reactx-mui\tsconfig-web.json</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,3 +1,7 @@
-import app from './app'
-export * from './app'
-export default app
+export * from 'material-ui/index'
+
+
+const icons = {
+  '': ''
+}
+export default icons
