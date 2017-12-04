@@ -73,6 +73,7 @@
     <Content Include=".babelrc" />
     <Content Include="app.json" />
     <Content Include="build.cmd" />
+    <Content Include="lib-web\package.json" />
     <None Include="packages.config" />
     <Content Include="README.md" />
     <Content Include="tsconfig-native.json" />

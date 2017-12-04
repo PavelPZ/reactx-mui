@@ -1,0 +1,32 @@
+{
+  "name": "reactx-mui-native",
+  "version": "0.1.16",
+  "description": "material-ui for react-native, EXPO version",
+  "registry": "npm",
+  "main": "test/App.js",
+  "dependencies": {
+    "deepmerge": "^2.0.1",
+    "expo": "^23.0.5",
+    "react": "16.0.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-23.0.0.tar.gz",
+    "tslib": "^1.8.0",
+    "warning": "^3.0.0"
+  },
+  "jspmPackage": true,
+  "format": "umd",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PavelPZ/reactx-mui.git"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "material-ui"
+  ],
+  "author": "pzika@langmaster.cz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PavelPZ/reactx-mui/issues"
+  },
+  "homepage": "https://github.com/PavelPZ/reactx-mui#readme"
+}
