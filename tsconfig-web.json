@@ -6,17 +6,16 @@
     "inlineSourceMap": true,
     "inlineSources": true,
     "importHelpers": true,
-    "outDir": "build-web",
+    "outDir": "lib-web",
 
     "baseUrl": ".",
     "paths": {
-      "reactx-mui/current/*": [ "src/reactx-mui/web/*" ],
-      "reactx-mui/native/*": [ "src/reactx-mui/native/*" ],
-      "reactx-mui/web/*": [ "src/reactx-mui/web/*" ],
-      "reactx-mui/common/*": [ "src/reactx-mui/common/*" ],
+      "reactx-mui/current/*": [ "src/web/*" ],
+      "reactx-mui/native/*": [ "src/native/*" ],
+      "reactx-mui/web/*": [ "src/web/*" ],
+      "reactx-mui/common/*": [ "src/common/*" ],
       "test/*": [ "src/test/*" ]
     },
-    "rootDir": ".",
 
     //"importHelpers": true, https://github.com/facebook/react-native/issues/16858
     "allowSyntheticDefaultImports": true,
@@ -36,7 +35,7 @@
       "esnext.asynciterable"
     ]
   },
-  "include": [ "**/*" ],
+  "include": [ "./src/**/*" ],
   "exclude": [
     "jspm_packages",
     "node_modules",

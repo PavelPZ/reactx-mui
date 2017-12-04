@@ -1,0 +1,1 @@
+export const halloText = 'HALLO 444 '

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "material-ui for react-native",
   "private": true,
-  "main": "build-native/App.js",
+  "main": "lib-native/test/App.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

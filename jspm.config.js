@@ -15,11 +15,11 @@ SystemJS.config({
     }
   },
   map: {
-    "reactx-mui/current": "build-web/src/reactx-mui/web",
-    "reactx-mui/web": "build-web/src/reactx-mui/web",
-    "reactx-mui/common": "build-web/src/reactx-mui/common",
-    "reactx-mui/native": "build-web/src/reactx-mui/native",
-    "test": "build-web/src/test"
+    "reactx-mui/current": "lib-web/web",
+    "reactx-mui/web": "lib-web/web",
+    "reactx-mui/common": "lib-web/common",
+    "reactx-mui/native": "lib-web/native",
+    "reactx-mui/test": "lib-web/test",
   }
 
 });

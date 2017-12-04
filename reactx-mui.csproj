@@ -68,6 +68,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="jspm.config.js" />
     <Content Include="package.json" />
     <Content Include=".babelrc" />
     <Content Include="app.json" />
@@ -95,22 +96,24 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="App.tsx" />
-    <TypeScriptCompile Include="index.tsx" />
-    <TypeScriptCompile Include="src\reactx-mui\common\deepmerge.d.ts" />
-    <TypeScriptCompile Include="src\reactx-mui\common\hallo.ts" />
-    <TypeScriptCompile Include="src\reactx-mui\common\react-native-d.d.ts" />
-    <TypeScriptCompile Include="src\reactx-mui\common\warning.d.ts" />
-    <TypeScriptCompile Include="src\reactx-mui\native\index.ts" />
-    <TypeScriptCompile Include="src\reactx-mui\native\app.tsx" />
-    <TypeScriptCompile Include="src\reactx-mui\web\app.tsx" />
-    <TypeScriptCompile Include="src\reactx-mui\web\index.ts" />
+    <TypeScriptCompile Include="src\test\App.tsx" />
     <TypeScriptCompile Include="src\test\index.tsx" />
+    <TypeScriptCompile Include="src\common\deepmerge.d.ts" />
+    <TypeScriptCompile Include="src\common\hallo.ts" />
+    <TypeScriptCompile Include="src\common\react-native-d.d.ts" />
+    <TypeScriptCompile Include="src\common\warning.d.ts" />
+    <TypeScriptCompile Include="src\native\index.ts" />
+    <TypeScriptCompile Include="src\native\app.tsx" />
+    <TypeScriptCompile Include="src\web\app.tsx" />
+    <TypeScriptCompile Include="src\web\index.ts" />
+    <TypeScriptCompile Include="src\test\test-app.tsx" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="src\reactx-mui\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

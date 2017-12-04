@@ -1,5 +1,9 @@
 import React from 'react'
-import app from 'reactx-mui/current/app'
+import ReactDOM from 'react-dom'
+import app from './test-app'
 
-export default app
+//const AppComp: React.SFC = props => <h1>HALLO</h1>
+const AppComp = app
+
+export const init = () => ReactDOM.render(<AppComp/>, document.getElementById('content'))
 

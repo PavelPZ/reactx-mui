@@ -1,4 +1,4 @@
-﻿rem ***** modify D:\rw\pavelpz\reactx-mui\node_modules\metro-bundler\src\blacklist.js, add /jspm_packages\/.*/,
+rem ***** modify D:\rw\pavelpz\reactx-mui\node_modules\metro-bundler\src\blacklist.js, add /jspm_packages\/.*/,
 
 d:
 cd d:\rw\pavelpz\reactx-mui
