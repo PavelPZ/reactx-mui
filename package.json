@@ -33,6 +33,7 @@
     "expo": "^23.0.5",
     "react": "16.0.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-23.0.0.tar.gz",
+    "reactx-icons-native": "^0.1.6",
     "recompose": "^0.26.0",
     "tslib": "^1.8.0",
     "warning": "^3.0.0"
@@ -44,6 +45,7 @@
       "core-js": "npm:core-js@^2.5.1",
       "deepmerge": "npm:deepmerge@^2.0.1",
       "material-ui": "npm:material-ui@next",
+      "reactx-icons-web": "npm:reactx-icons-web@^0.1.6",
       "recompose": "npm:recompose@^0.26.0",
       "tslib": "npm:tslib@^1.8.0",
       "warning": "npm:warning@^3.0.0"

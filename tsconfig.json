@@ -1,15 +1,18 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
-    "target": "es6",
-    "outDir": "lib-native",
+    "target": "es5",
+    "module": "system",
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "importHelpers": true,
+    "outDir": "lib-web",
 
     "baseUrl": ".",
     "paths": {
       "reactx-mui/current/*": [ "src/web/*" ],
       "reactx-mui/native/*": [ "src/native/*" ],
       "reactx-mui/web/*": [ "src/web/*" ],
-      "reactx-mui/test/*": [ "src/test/*" ],
       "reactx-mui/common/*": [ "src/common/*" ],
       "test/*": [ "src/test/*" ]
     },
@@ -25,7 +28,7 @@
 
     "experimentalDecorators": true,
     "noImplicitAny": false,
-    "jsx": "react-native",
+    "jsx": "react",
     "lib": [
       "dom",
       "es2015",

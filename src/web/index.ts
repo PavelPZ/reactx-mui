@@ -1,7 +1,4 @@
-export * from 'material-ui/index'
+import { AccessPointNetwork } from 'reactx-icons/current/AccessPointNetwork'
 
 
-const icons = {
-  '': ''
-}
-export default icons
+export const XXX = AccessPointNetwork

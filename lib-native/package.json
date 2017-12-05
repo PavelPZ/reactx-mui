@@ -12,8 +12,6 @@
     "tslib": "^1.8.0",
     "warning": "^3.0.0"
   },
-  "jspmPackage": true,
-  "format": "umd",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PavelPZ/reactx-mui.git"

@@ -29,6 +29,7 @@ SystemJS.config({
     "npm:*.json"
   ],
   map: {
+    "reactx-icons-web": "npm:reactx-icons-web@0.1.6",
     "jss": "npm:jss@9.3.3",
     "lodash": "npm:lodash@4.17.4",
     "material-ui": "npm:material-ui@next",
