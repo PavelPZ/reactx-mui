@@ -11,7 +11,7 @@ import spacing from 'material-ui/styles/spacing'
 import { toPlatformSheetLow } from './toPlatform'
 import { createTypographyNative, createTypographyWeb, shadowsNative, shadowsWeb } from 'reactx-mui/current/styles/createMuiTheme'
 
-export const platformOverrides = (source: Mui.OverridesSource) => {
+export const platformOverrides = (source: Mui.Overrides) => {
   if (!source) return null
   const result: Mui.Overrides = {}
   for (const p in source) result[p] = toPlatformSheetLow(source[p], false)
@@ -30,7 +30,7 @@ const getTypographyOptions = (optionsOrCreator: Mui.TypographyOptionsCreator) =>
   }
 
   if (typeof optionsOrCreator == 'function') {
-    return { optionsWeb: (palette => getOptions(optionsOrCreator(palette), false)) as Mui.web.TypographyOptionsCreator, optionsNative: (palette => getOptions(optionsOrCreator(palette), true)) as Mui.native.TypographyOptionsCreator }
+    return { optionsWeb: ((palette => getOptions(optionsOrCreator(palette), false))) as Mui.web.TypographyOptionsCreator /*Mui.web.TypographyOptionsCreator*/, optionsNative: (palette => getOptions(optionsOrCreator(palette), true)) as Mui.native.TypographyOptionsCreator }
   } else
     return { optionsWeb: getOptions(optionsOrCreator, false) as Mui.web.TypographyOptionsCreator, optionsNative: getOptions(optionsOrCreator, true) as Mui.native.TypographyOptionsCreator }
 }
@@ -62,8 +62,8 @@ function createMuiTheme(options: Mui.ThemeOptions = {}) {
     shadows: shadowsInput || shadowsWeb,
     shadowsNative: shadowsNativeInput || shadowsNative,
     overrides: platformOverrides(overrides),
-    nativeSheetCache:[],
-    ...deepmerge(
+    nativeSheetCache: [],
+    ...(deepmerge(
       {
         transitions,
         spacing,
@@ -73,7 +73,7 @@ function createMuiTheme(options: Mui.ThemeOptions = {}) {
       {
         clone: false, // No need to clone deep
       },
-    ),
+    )) as Mui.Theme,
   }
 
   warning(

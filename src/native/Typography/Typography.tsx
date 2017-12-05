@@ -20,6 +20,7 @@ export const sheet = sheetCreator<Typography.Shape>(({ typographyNative: typo, p
     body1: typo.body1,
     caption: typo.caption,
     button: typo.button,
+    alignJustify: { },
     alignLeft: { textAlign: 'left' },
     alignCenter: { textAlign: 'center', },
     alignRight: { textAlign: 'right', },

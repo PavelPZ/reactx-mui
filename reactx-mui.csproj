@@ -139,9 +139,16 @@
     <TypeScriptCompile Include="src\common\Template\Template.tsx" />
     <TypeScriptCompile Include="src\common\Text\Text-d.d.ts" />
     <TypeScriptCompile Include="src\common\Text\Text.tsx" />
+    <TypeScriptCompile Include="src\typings\material-ui-ex.d.ts" />
     <TypeScriptCompile Include="src\common\Typography\Typography-d.d.ts" />
     <TypeScriptCompile Include="src\common\View\View-d.d.ts" />
     <TypeScriptCompile Include="src\common\View\View.tsx" />
+    <TypeScriptCompile Include="src\global-typings\expo.d.ts" />
+    <TypeScriptCompile Include="src\global-typings\material-icons.d.ts" />
+    <TypeScriptCompile Include="src\global-typings\material-ui-helper.d.ts" />
+    <TypeScriptCompile Include="src\global-typings\material-ui.d.ts" />
+    <TypeScriptCompile Include="src\global-typings\react-native.d.ts" />
+    <TypeScriptCompile Include="src\global-typings\typings.d.ts" />
     <TypeScriptCompile Include="src\native\ButtonBase\ButtonBase.tsx" />
     <TypeScriptCompile Include="src\native\Button\Button.tsx" />
     <TypeScriptCompile Include="src\native\Icon\Icon.tsx" />
@@ -157,7 +164,6 @@
     <TypeScriptCompile Include="src\native\Text\Text.tsx" />
     <TypeScriptCompile Include="src\native\Typography\Typography.tsx" />
     <TypeScriptCompile Include="src\native\View\View.tsx" />
-    <TypeScriptCompile Include="src\typings\mdi-react-n.d.ts" />
     <TypeScriptCompile Include="src\web\ButtonBase\ButtonBase.tsx" />
     <TypeScriptCompile Include="src\web\Button\Button.tsx" />
     <TypeScriptCompile Include="src\web\Icon\Icon.tsx" />
@@ -171,10 +177,6 @@
     <TypeScriptCompile Include="src\web\Text\Text.tsx" />
     <TypeScriptCompile Include="src\web\Typography\Typography.tsx" />
     <TypeScriptCompile Include="src\web\View\View.tsx" />
-    <TypeScriptCompile Include="src\typings\expo.d.ts" />
-    <TypeScriptCompile Include="src\typings\mui-d.d.ts" />
-    <TypeScriptCompile Include="src\typings\react-native.d.ts" />
-    <TypeScriptCompile Include="src\typings\typings.d.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -8,7 +8,7 @@
     style: Mui.RNIconStyle
     props: {
       color?: Colors
-      children?: GUI.mdi_icons
+      children?: MDI.icons
     }
     propsWeb: {}
     propsNative: {}

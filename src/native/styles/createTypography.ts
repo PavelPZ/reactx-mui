@@ -39,7 +39,7 @@ export default function createTypography(palette: Mui.Palette, optionOrCreator: 
     ...other
   } = (typeof optionOrCreator === 'function' ? optionOrCreator(palette) : optionOrCreator) as Mui.native.TypographyOptions
 
-  const fontsNative = fontsNativeInit ? deepmerge(fontsNativeDefault, fontsNativeInit) : fontsNativeDefault
+  const fontsNative = fontsNativeInit ? deepmerge(fontsNativeDefault, fontsNativeInit) as Mui.native.FontsNative : fontsNativeDefault
   //const fontSizesNative = fontSizesNativeInit ? { ...fontSizesNativeDefault, ...fontSizesNativeInit } : fontSizesNativeDefault
 
   //http://typecast.com/blog/a-more-modern-scale-for-web-typography
@@ -49,7 +49,6 @@ export default function createTypography(palette: Mui.Palette, optionOrCreator: 
     fontSize,
     htmlFontSize,
     fontsNative,
-    //root: {},
     display4: {
       fontSize: fontSizeNormalizerNative(fontSizesNative.display4),
       ...fontsNative.light,
@@ -119,7 +118,7 @@ export default function createTypography(palette: Mui.Palette, optionOrCreator: 
   ) as Mui.native.Typography
 }
 
-const fontsNativeDefault = {
+const fontsNativeDefault: Mui.native.FontsNative = {
   light: {
     fontFamily: 'Roboto_Light',
     //fontFile: 'Roboto-Light.ttf',

@@ -26,12 +26,11 @@
     "@types/react": "^16.0.25",
     "@types/react-dom": "^16.0.3",
     "@types/react-native": "^0.50.7",
-    "material-ui": "^1.0.0-beta.22"
+    "material-ui-build-next": "^1.0.0-beta.22"
   },
   "dependencies": {
     "deepmerge": "^2.0.1",
     "expo": "^23.0.5",
-    "material-ui": "^1.0.0-beta.22",
     "react": "16.0.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-23.0.0.tar.gz",
     "reactx-icons-native": "^0.1.6",
