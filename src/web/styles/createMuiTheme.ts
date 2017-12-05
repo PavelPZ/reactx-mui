@@ -6,3 +6,4 @@ export const createTypographyWeb = ctNative
 export const createTypographyNative = (palette, options) => emptyTypography //as Mui.native.TypographyOptionsCreator
 export const shadowsNative = emptyShadowsNative
 export const shadowsWeb = shadows_w
+

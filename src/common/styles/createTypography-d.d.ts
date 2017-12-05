@@ -29,7 +29,7 @@
       fontSizeNormalizerNative: (size: number) => number
       fontAssetPathNative: string
     }
-    type FontStyle = FontStyleLow & { fontsNative: Record<FontKey, Font> }
+    type FontStyle =  FontStyleLow & { fontsNative: Record<FontKey, Font> }
     type FontStylePartial = Partial<FontStyleLow> & { fontsNative?: PartialRecord<FontKey, Partial<Font>> }
     type Typography = {[type in TypographyClassKey]: RN.TextStyle } & FontStyle
     type TypographyOptions = {[type in TypographyClassKey]?: RN.TextStyle } & FontStylePartial
