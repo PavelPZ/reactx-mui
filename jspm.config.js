@@ -16,10 +16,7 @@ SystemJS.config({
   },
   map: {
     "reactx-mui/current": "lib-web/web",
-    "reactx-mui/web": "lib-web/web",
-    "reactx-mui/common": "lib-web/common",
-    "reactx-mui/native": "lib-web/native",
-    "reactx-mui/test": "lib-web/test"
+    "reactx-mui": "lib-web",
   }
 });
 

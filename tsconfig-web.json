@@ -14,8 +14,7 @@
       "reactx-mui/native/*": [ "src/native/*" ],
       "reactx-mui/web/*": [ "src/web/*" ],
       "reactx-mui/common/*": [ "src/common/*" ],
-      "test/*": [ "src/test/*" ],
-      "material-ui/*": [ "node_modules/material-ui-build-next/src/*" ]
+      "test/*": [ "src/test/*" ]
     },
 
     //"importHelpers": true, https://github.com/facebook/react-native/issues/16858

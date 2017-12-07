@@ -1,4 +1,6 @@
 import React from 'react'
+import RN from 'react-native'
+
 import withStylesMui from 'material-ui/styles/withStyles'
 import hoistNonReactStatics from 'hoist-non-react-statics'
 import _classnames from 'classnames'

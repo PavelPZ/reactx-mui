@@ -1,6 +1,6 @@
 {
   "name": "reactx-mui-web",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "material-ui for react-native, UMD version",
   "registry": "npm",
   "main": "test/index.js",

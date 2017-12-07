@@ -1,6 +1,6 @@
-d:
-
 set root=d:\rw\pavelpz\reactx-mui
+
+d:
 
 cd %root%
 rmdir node_modules /s /q

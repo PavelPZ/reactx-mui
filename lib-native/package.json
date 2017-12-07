@@ -1,6 +1,6 @@
 {
   "name": "reactx-mui-native",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "material-ui for react-native, EXPO version",
   "registry": "npm",
   "main": "test/App.js",

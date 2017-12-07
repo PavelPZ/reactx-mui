@@ -10,8 +10,8 @@
       "module-resolver",
       {
         "alias": {
-          "reactx-mui": "./lib-native",
-          "reactx-mui/current": "./lib-native/native"
+          "reactx-mui/current": "./lib-native/native",
+          "reactx-mui": "./lib-native"
         }
       }
     ]

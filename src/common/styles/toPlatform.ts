@@ -1,4 +1,6 @@
-﻿export const toRuleLow = (style: Mui.RuleUntyped, isNative: boolean) => {
+﻿import RN from 'react-native'
+
+export const toRuleLow = (style: Mui.RuleUntyped, isNative: boolean) => {
   if (!style) return null
   const { web, native, ...rest } = style
   return { ...rest, ...(isNative ? native : web) } as Mui.PlatformRuleUntyped
