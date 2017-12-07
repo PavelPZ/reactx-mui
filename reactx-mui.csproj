@@ -144,11 +144,9 @@
     <TypeScriptCompile Include="src\common\Typography\Typography-d.d.ts" />
     <TypeScriptCompile Include="src\common\View\View-d.d.ts" />
     <TypeScriptCompile Include="src\common\View\View.tsx" />
-    <TypeScriptCompile Include="src\global-typings\expo.d.ts" />
     <TypeScriptCompile Include="src\global-typings\material-icons.d.ts" />
     <TypeScriptCompile Include="src\global-typings\material-ui-helper.d.ts" />
     <TypeScriptCompile Include="src\global-typings\material-ui.d.ts" />
-    <TypeScriptCompile Include="src\global-typings\react-native.d.ts" />
     <TypeScriptCompile Include="src\global-typings\typings.d.ts" />
     <TypeScriptCompile Include="src\native\ButtonBase\ButtonBase.tsx" />
     <TypeScriptCompile Include="src\native\Button\Button.tsx" />
