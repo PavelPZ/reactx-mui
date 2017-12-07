@@ -12,6 +12,6 @@ cd d:\rw\pavelpz\reactx-mui\lib-web
 call npm version patch
 call npm publish
 
-cd D:\rw\pavelpz\reactx-html
-call jspm update reactx-mui-web
-call npm install reactx-mui-native --save
+rem cd d:\rw\pavelpz\reactx-html
+rem call npm install --save reactx-mui-native
+rem call jspm install reactx-mui-web

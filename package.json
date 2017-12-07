@@ -23,20 +23,21 @@
   },
   "homepage": "https://github.com/PavelPZ/reactx-mui#readme",
   "devDependencies": {
-    "@types/react": "^16.0.25",
+    "@types/expo": "PavelPZ/reactx-types-expo",
+    "@types/react": "PavelPZ/reactx-types-react",
     "@types/react-dom": "^16.0.3",
-    "@types/react-native": "^0.50.7",
-    "material-ui-build-next": "^1.0.0-beta.22"
+    "@types/react-native": "PavelPZ/reactx-types-react-native",
+    "material-ui": "^1.0.0-beta.22",
+    "babel-plugin-module-resolver": "^3.0.0"
   },
   "dependencies": {
     "deepmerge": "^2.0.1",
     "expo": "^23.0.5",
     "react": "16.0.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-23.0.0.tar.gz",
-    "reactx-icons-native": "^0.1.6",
+    "reactx-icons-native": "^0.1.20",
     "recompose": "^0.26.0",
-    "tslib": "^1.8.0",
-    "warning": "^3.0.0"
+    "tslib": "^1.8.0"
   },
   "jspm": {
     "name": "reactx-mui",
@@ -44,7 +45,7 @@
     "dependencies": {
       "core-js": "npm:core-js@^2.5.1",
       "deepmerge": "npm:deepmerge@^2.0.1",
-      "material-ui": "npm:material-ui@next",
+      "material-ui": "npm:material-ui@^1.0.0-beta.22",
       "reactx-icons-web": "npm:reactx-icons-web@^0.1.6",
       "recompose": "npm:recompose@^0.26.0",
       "tslib": "npm:tslib@^1.8.0",

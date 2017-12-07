@@ -27,7 +27,7 @@ export const getClasses = <T extends Mui.NativeCSS | string>({ classes, color = 
   const childs = React.Children.toArray(children)
   warning(childs.length == 1 && typeof childs[0] === 'string', 'single child as string needed')
   return {
-    name: childs[0] as string,
+    name: childs[0] as MDI.icons,
     classes: {
       iconClass: [classes.root, classes[`color${capitalizeFirstLetter(color)}`]] as T[]
     },

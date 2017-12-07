@@ -1,7 +1,8 @@
 ﻿{
   "compileOnSave": true,
   "compilerOptions": {
-    "target": "es6",
+    //"target": "es6",
+    "target": "es2017",
     "outDir": "lib-native",
 
     "baseUrl": ".",
