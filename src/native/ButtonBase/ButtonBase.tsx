@@ -110,7 +110,7 @@ class RippleEffect extends React.PureComponent<{ style: RN.ViewStyle, theme: Mui
   }
 }
 
-const ButtonBase = withStyles<MuiButtonBase.Shape>(sheet, { name: Mui.Names.ButtonBase })(buttonBase)
+const ButtonBase = withStyles<MuiButtonBase.Shape>(sheet, { name: 'MuiButtonBase' })(buttonBase)
 
 //const b = <ButtonBase style={{}} onClick={null} />
 

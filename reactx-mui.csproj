@@ -101,6 +101,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="refresh.cmd" />
+    <Content Include="src\typings-shared\mui-last-d.ts.tar" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -140,14 +141,18 @@
     <TypeScriptCompile Include="src\common\Template\Template.tsx" />
     <TypeScriptCompile Include="src\common\Text\Text-d.d.ts" />
     <TypeScriptCompile Include="src\common\Text\Text.tsx" />
+    <TypeScriptCompile Include="src\test\button.tsx" />
+    <TypeScriptCompile Include="src\test\icon.tsx" />
+    <TypeScriptCompile Include="src\test\text-view.tsx" />
+    <TypeScriptCompile Include="src\test\typography.tsx" />
+    <TypeScriptCompile Include="src\typings-shared\material-icons.d.ts" />
+    <TypeScriptCompile Include="src\typings-shared\material-ui-helper.d.ts" />
+    <TypeScriptCompile Include="src\typings-shared\material-ui.d.ts" />
+    <TypeScriptCompile Include="src\typings-shared\typings.d.ts" />
     <TypeScriptCompile Include="src\typings\material-ui-ex.d.ts" />
     <TypeScriptCompile Include="src\common\Typography\Typography-d.d.ts" />
     <TypeScriptCompile Include="src\common\View\View-d.d.ts" />
     <TypeScriptCompile Include="src\common\View\View.tsx" />
-    <TypeScriptCompile Include="src\global-typings\material-icons.d.ts" />
-    <TypeScriptCompile Include="src\global-typings\material-ui-helper.d.ts" />
-    <TypeScriptCompile Include="src\global-typings\material-ui.d.ts" />
-    <TypeScriptCompile Include="src\global-typings\typings.d.ts" />
     <TypeScriptCompile Include="src\native\ButtonBase\ButtonBase.tsx" />
     <TypeScriptCompile Include="src\native\Button\Button.tsx" />
     <TypeScriptCompile Include="src\native\Icon\Icon.tsx" />

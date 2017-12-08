@@ -13,7 +13,7 @@ const icon: Mui.CodeSFCWeb<MuiIcon.Shape> = (props => {
   </SvgIcon>
 }) 
 
-const Icon = withStyles<MuiIcon.Shape>(sheet, { name: Mui.Names.Icon })(icon)
+const Icon = withStyles<MuiIcon.Shape>(sheet, { name: 'MuiIcon' })(icon)
 
 export default Icon
 

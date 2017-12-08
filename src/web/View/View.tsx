@@ -9,6 +9,6 @@ const view: Mui.CodeSFCWeb<MuiView.Shape> = props => {
   return <div className={classNames(classes.root)} ref={div => innerRef && innerRef(div)} {...rest} />
 }
 
-const View = withStyles<MuiView.Shape>(sheet, { name: Mui.Names.View })(view)
+const View = withStyles<MuiView.Shape>(sheet, { name: 'MuiViewx' })(view)
 
 export default View

@@ -1,17 +1,31 @@
 ﻿declare namespace Mui {
 
   //*********** CONSTS
-  const enum Names {
-    rootRule = 'root',
-    Icon = 'MuiIcon',
-    Typography = 'MuiTypography',
-    ButtonBase = 'MuiButtonBase',
-    Button = 'MuiButton',
-    View = 'MuiView',
-    Text = 'MuiText',
-    Template = 'MuiTemplate',
-    ScrollView = 'MuiScrollView',
+  //const enum Names {
+  //  Icon = 'MuiIcon',
+  //  Typography = 'MuiTypography',
+  //  ButtonBase = 'MuiButtonBase',
+  //  Button = 'MuiButton',
+  //  View = 'MuiView',
+  //  Text = 'MuiText',
+  //  Template = 'MuiTemplate',
+  //  ScrollView = 'MuiScrollView',
+  //}
+
+  type Shapes = {
+    MuiIcon: MuiIcon.Shape
+    MuiTypography: Typography.Shape
+    MuiButtonBase: MuiButtonBase.Shape
+    MuiButton: MuiButton.Shape
+    MuiView: MuiView.Shape
+    MuiText: MuiText.Shape
+    MuiScrollView: MuiScrollView.Shape
+
+    MuiTemplate: MuiTemplate.Shape
   }
+
+  type Names = keyof Shapes
+
 
   interface WithStylesOptions {
     flip?: boolean
@@ -24,7 +38,7 @@
     fontSize?: number
   }
 
-  type CSSProperties = ReactCSS.CSSProperties & { [propertyName: string]: any }
+  type CSSProperties = React.CSSProperties //& { [propertyName: string]: any }
 
   //*********** RULE typing
   //available native styles
@@ -40,8 +54,8 @@
   type PlatformRuleUntyped = NativeCSS | CSSProperties
 
   //select native props from web CSS. E.g. commonStyle<RN.TextStyle> could be used both for native <Text> and web <span>
-  type commonStyle<TNative> = TakeFrom<TNative, webUsableInNative & keyof TNative>
-  type webUsableInNative = Diff<keyof ReactCSS.CSSProperties, 'transform'> //transform native prop is not compatible with web
+  type commonStyle<TNative> = TakeFrom<TNative, keyof React.CSSPropertiesLow & keyof TNative>
+  //type webUsableInNative = Diff<keyof React.CSSPropertiesLow, 'transform'> //transform native prop is not compatible with web
 
   //*********** RULES typing NEW
   interface Shape {

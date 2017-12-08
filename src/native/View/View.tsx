@@ -9,6 +9,6 @@ const view: Mui.CodeSFCNative<MuiView.Shape> = props => {
   return <RNView style={classNames(classes.root, style)} ref={div => innerRef && innerRef(div)} {...rest} />
 }
 
-const View = withStyles<MuiView.Shape>(sheet, { name: Mui.Names.View })(view)
+const View = withStyles<MuiView.Shape>(sheet, { name: 'MuiView' })(view)
 
 export default View

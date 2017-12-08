@@ -125,7 +125,7 @@ const button: Mui.CodeSFCNative<MuiButton.Shape> = props => {
 }
 
 
-const Button = withStyles<MuiButton.Shape>(sheet, { name: Mui.Names.Button })(button)
+const Button = withStyles<MuiButton.Shape>(sheet, { name: 'MuiButton' })(button)
 
 
 //const btn = <Button classes={{ root: {}, denseLabel: { color: '' } }} color='accent' onClick={null} />

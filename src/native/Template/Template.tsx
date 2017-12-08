@@ -9,6 +9,6 @@ const template: Mui.CodeSFCNative<MuiTemplate.Shape> = props => {
   return <View style={classNames(classes.root, style)}  {...rest}/>
 }
 
-const Template = withStyles<MuiTemplate.Shape>(sheet, { name: Mui.Names.Template })(template)
+const Template = withStyles<MuiTemplate.Shape>(sheet, { name: 'MuiTemplate' })(template)
 
 export default Template

@@ -6,11 +6,39 @@ export const toRuleLow = (style: Mui.RuleUntyped, isNative: boolean) => {
   return { ...rest, ...(isNative ? native : web) } as Mui.PlatformRuleUntyped
 }
 
+/* INPUT
+const sheet = {
+  common: {
+    root: {
+      color: 'red',
+      web: { color: 'blue' },
+      native: { color: 'yellow' }
+    }
+  },
+  native: {
+    root: { color: 'green' }
+  },
+  web: {
+    root: { }
+  }
+}
+//OUTPUT for WEB
+const web = {
+  root: {color: 'blue'}
+}
+//OUTPUT for NATIVE
+const native = {
+  root: { color: 'green' }
+}
+*/
 export const toPlatformSheetLow = (rules: Mui.PartialSheet<Mui.Shape>, isNative: boolean) => {
   if (!rules) return null
-  const res: Mui.PlatformSheet<Mui.Shape> = { ...(isNative ? rules.native : rules.web) }
-  for (const p in rules.common) res[p] = toRuleLow(rules.common[p], isNative)
-  return res
+  const res = { ...(isNative ? rules.native : rules.web) }
+  for (const p in rules.common) {
+    const common = toRuleLow(rules.common[p], isNative)
+    res[p] = !!res[p] ? { ...common, ...res[p] } : common
+  }
+  return res as Mui.PlatformSheet<Mui.Shape>
 }
 
 export const toPlatformTypographyOptionsLow = (options: Mui.TypographyOptions, isNative: boolean) => {

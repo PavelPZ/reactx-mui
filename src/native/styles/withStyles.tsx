@@ -28,7 +28,7 @@ const styleOverride = <R extends Mui.Shape>(renderedClasses: Mui.PlatformSheetNa
 
 const styleCreator = <R extends Mui.Shape>(styleOrCreator: Mui.PlatformSheetCreator<R>, theme: Mui.Theme, name?: string) => {
   const overrides = (theme.overrides && name && theme.overrides[name]) as Mui.PlatformSheetNative<R>
-  const styles = typeof styleOrCreator === 'function' ? styleOrCreator(theme) : styleOrCreator
+  const styles = (typeof styleOrCreator === 'function' ? styleOrCreator(theme) : styleOrCreator) as Mui.PlatformSheetNative<R>
   return styleOverride(styles, overrides, name)
 }
 

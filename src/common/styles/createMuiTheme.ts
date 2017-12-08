@@ -25,7 +25,7 @@ const getTypographyOptions = (optionsOrCreator: Mui.TypographyOptionsCreator) =>
     const { fontFamily, fontSize, fontWeightLight, fontWeightRegular, fontWeightMedium, htmlFontSize, fontSizeNormalizerNative, fontAssetPathNative, ...rest } = options
     return {
       ...(isNative ? { htmlFontSize, fontSize, fontSizeNormalizerNative, fontAssetPathNative } : { htmlFontSize, fontSize, fontFamily, fontWeightLight, fontWeightRegular, fontWeightMedium }),
-      ...toPlatformSheetLow({ common: rest }, isNative)
+      ...toPlatformSheetLow({ common: rest }, isNative) as any
     }
   }
 

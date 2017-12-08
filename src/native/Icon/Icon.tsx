@@ -8,10 +8,10 @@ import { getClasses, sheet } from 'reactx-mui/common/Icon/Icon'
 export * from 'reactx-mui/common/Icon/Icon'
 
 const icon: Mui.CodeSFCNative<MuiIcon.Shape> = props => {
-  const { classes: { iconClass }, name, style, rest, innerRef} = getClasses<Mui.RNIconStyle>(props)
+  const { classes: { iconClass }, name, style, rest, innerRef } = getClasses<Mui.RNIconStyle>(props)
   return <MIcon name={name as any} style={classNames(iconClass, style as Mui.RNIconStyle)} ref={div => innerRef && innerRef(div)} {...rest} />
 }
 
-const Icon = withStyles<MuiIcon.Shape>(sheet, { name: Mui.Names.Icon })(icon)
+const Icon = withStyles<MuiIcon.Shape>(sheet, { name: 'MuiIcon' })(icon)
 
 export default Icon

@@ -9,6 +9,6 @@ const scrollView: Mui.CodeSFCWeb<MuiScrollView.Shape> = props => {
   return <div className={classNames(classes.root)} {...rest} />
 }
 
-const ScrollView = withStyles<MuiScrollView.Shape>(sheet, { name: Mui.Names.ScrollView })(scrollView)
+const ScrollView = withStyles<MuiScrollView.Shape>(sheet, { name: 'MuiScrollView' })(scrollView)
 
 export default ScrollView

@@ -9,14 +9,14 @@
     interface FontStyle {
       fontSize: number
       htmlFontSize: number
-      fontFamily: ReactCSS.CSSProperties['fontFamily']
+      fontFamily: React.CSSProperties['fontFamily']
       fontWeightLight: FontWeight
       fontWeightRegular: FontWeight
       fontWeightMedium: FontWeight
     }
     type FontWeight = RN.TextStyle['fontWeight']
     //type TypographyStyle = CSSProperties
-    type Typography = {[type in TypographyClassKey]: ReactCSS.CSSProperties } & FontStyle
+    type Typography = {[type in TypographyClassKey]: React.CSSProperties } & FontStyle
     //type TypographyOptions = Partial<Typography>
     type TypographyOptionsCreator = TypographyOptions | ((palette: Palette) => TypographyOptions)
   }

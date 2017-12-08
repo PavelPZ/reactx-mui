@@ -23,7 +23,7 @@ const cache = {}
 
 //export const overrideCSS = (classNames: string, css: CSSProperties) => classNames + ' ' + renderCSS(css)
 
-export const ruleToClassNames = (css: ReactCSS.CSSProperties) => {
+export const ruleToClassNames = (css: React.CSSProperties) => {
   if (!css) return ''
   const classes: string[] = []
   for (var p in css) {
@@ -49,7 +49,7 @@ export const ruleToClassNames = (css: ReactCSS.CSSProperties) => {
   return classes.join(' ')
 }
 
-export const sheetToClassSheet = <TKey extends string>(sheet: Partial<Record<TKey, ReactCSS.CSSProperties>>) => {
+export const sheetToClassSheet = <TKey extends string>(sheet: Partial<Record<TKey, React.CSSProperties>>) => {
   if (!sheet) return null
   const res: Partial<Record<TKey, string>> = {}
   for (const p in sheet) res[p] = ruleToClassNames(sheet[p])

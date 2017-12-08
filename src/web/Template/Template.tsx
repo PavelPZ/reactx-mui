@@ -9,6 +9,6 @@ const template: Mui.CodeSFCWeb<MuiTemplate.Shape> = props => {
   return <div className={classNames(classes.root)} {...rest} />
 }
 
-const Template = withStyles<MuiTemplate.Shape>(sheet, { name: Mui.Names.Template })(template)
+const Template = withStyles<MuiTemplate.Shape>(sheet, { name: 'MuiTemplate' })(template)
 
 export default Template

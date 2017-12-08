@@ -9,6 +9,6 @@ const text: Mui.CodeSFCNative<MuiText.Shape> = props => {
   return <RNText style={classNames<RN.TextStyle>(classes.root, style)} ref={div => innerRef && innerRef(div)} {...rest} />
 }
 
-const Text = withStyles<MuiText.Shape>(sheet, { name: Mui.Names.Text })(text)
+const Text = withStyles<MuiText.Shape>(sheet, { name: 'MuiText' })(text)
 
 export default Text

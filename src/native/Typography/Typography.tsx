@@ -68,7 +68,6 @@ const typography: Mui.CodeSFCNative<Typography.Shape> = (props => {
   return <TextRN style={actStyle} {...(noWrap && classes.noWrap) } {...other} />
 })
 
-const Typography = withStyles<Typography.Shape>(sheet, { name: Mui.Names.Typography })(typography)
-//export const Text = withStyles<Typography.Shape>(sheet, { name: Mui.Names.Text })(typography)
+const Typography = withStyles<Typography.Shape>(sheet, { name: 'MuiTypography' })(typography)
 
 export default Typography
