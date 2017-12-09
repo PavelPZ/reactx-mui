@@ -141,6 +141,7 @@
     <TypeScriptCompile Include="src\common\Template\Template.tsx" />
     <TypeScriptCompile Include="src\common\Text\Text-d.d.ts" />
     <TypeScriptCompile Include="src\common\Text\Text.tsx" />
+    <TypeScriptCompile Include="src\test\index.tsx" />
     <TypeScriptCompile Include="src\test\button.tsx" />
     <TypeScriptCompile Include="src\test\icon.tsx" />
     <TypeScriptCompile Include="src\test\text-view.tsx" />

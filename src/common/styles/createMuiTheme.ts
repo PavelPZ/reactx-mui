@@ -11,7 +11,7 @@ import spacing from 'material-ui/styles/spacing'
 import { toPlatformSheetLow } from './toPlatform'
 import { createTypographyNative, createTypographyWeb, shadowsNative, shadowsWeb } from 'reactx-mui/current/styles/createMuiTheme'
 
-export const platformOverrides = (source: Mui.Overrides) => {
+export const platformOverrides = (source: Mui.OverridesNew) => {
   if (!source) return null
   const result: Mui.Overrides = {}
   for (const p in source) result[p] = toPlatformSheetLow(source[p], false)
@@ -43,7 +43,8 @@ function createMuiTheme(options: Mui.ThemeOptions = {}) {
     typography: typographyInput,
     shadows: shadowsInput,
     shadowsNative: shadowsNativeInput,
-    overrides,
+    overridesNew, //XPlatform format
+    overrides, //ignored
     ...other
   } = options
 
@@ -61,7 +62,7 @@ function createMuiTheme(options: Mui.ThemeOptions = {}) {
     breakpoints,
     shadows: shadowsInput || shadowsWeb,
     shadowsNative: shadowsNativeInput || shadowsNative,
-    overrides: platformOverrides(overrides),
+    overrides: platformOverrides(overridesNew),
     nativeSheetCache: [],
     ...(deepmerge(
       {

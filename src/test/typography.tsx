@@ -39,7 +39,7 @@ import ScrollView from 'reactx-mui/current/ScrollView/ScrollView'
 const theme = createMuiTheme({
   typography: palette => ({
     caption: {
-      //color: cyan.A700,
+      color: cyan.A700,
       fontSize: 28,
       fontWeight: '500',
       native: {
